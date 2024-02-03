@@ -1,0 +1,148 @@
+.container{
+    width: 100%;
+    height: 100vh;
+
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f3f2f2da;
+
+}
+
+.signup_main{
+    width: 30rem;
+    height: fit-content;
+    border-radius: 0.5rem;
+   background-color: #ffffff;
+    box-shadow:  0 0 0.1rem #d8d8da;
+
+    
+}
+
+.header{
+    width: 30rem;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem  1rem;
+}
+
+.signup_header{
+    font-weight: 500;
+    font-size: 2rem;
+}
+.signup_para{
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.form{
+    width: 100%;
+    height: fit-content;
+    margin-top: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+}
+.fullname{
+    display: flex;
+    gap: 1rem;
+}
+
+.name{
+    width: 13rem;
+    height: 2.5rem;
+    border: 1px solid #cac6c6;
+    font-size: 0.8rem;
+    padding-left: 0.7rem;
+    border-radius: 0.5rem;
+}
+
+
+.id , .password{
+    width: 90%;
+    height: 2.5rem;
+
+    border: 1px solid #cac6c6;
+    font-size: 0.8rem;
+    padding-left: 0.7rem;
+    border-radius: 0.5rem;
+
+
+}
+.name, .id, .password, .date:focus{
+    outline: none;
+}
+
+.birthday, .gender{
+    width: 90%;
+    font-size: 0.9rem;
+    color: #606770;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+/* .question_mark{
+    
+} */
+.date_content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.date{
+    width: 30%;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.gender_content{
+    width: 90%;
+ display: flex;
+ gap: 2rem;
+
+}
+.sex{
+    width: 10rem;
+    height: 2.5rem;
+    border: 1px solid #cac6c6;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.custom{
+    margin-top: 1rem;
+    width: 100%;
+    height: 2.5rem;
+    border: 1px solid #cac6c6;
+    font-size: 1rem;
+    padding-left: 0.7rem;
+    border-radius: 0.5rem;
+
+}
+
+.signup_button{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 1rem 4rem;
+    background-color:  #21b304;
+    border: none;
+    border-radius: 0.5rem;
+
+    margin:0rem 0rem 1rem 0rem;
+}
+
+/* @media screen and (max-width:) {
+    
+} */
