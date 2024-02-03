@@ -41,18 +41,21 @@ export default function Signup({closeSignup}) {
   
   const onSubmit= async (e)=>{
     e.preventDefault()
+
+    console.log({firstname,lastname,id,password,day,month,yrs,gender})
   
     const url = 'http://localhost:3000/api/login';
 
     let response = await fetch(url, {method:'POST',
-     body:JSON.stringify({firstname,lastname,id,password,day,gender
-    })})
+     body:JSON.stringify({firstname,lastname,id,password,day,month,yrs,gender
+    }),headers:{
+      'Content-Type': 'application/json'
+    }})
 
-    await response.json();
+   const data= await response.json();
 
-    if(response.status == true){
-      
-      alert('Data added successfully');
+    if(data.status == true){
+      alert("inserted");
     }
   
   }
@@ -82,6 +85,7 @@ export default function Signup({closeSignup}) {
               className={styles.name}
               onChange={(e)=> setFirstname(e.target.value)}
               required
+      
             />
             <input
               type="text"
@@ -89,6 +93,7 @@ export default function Signup({closeSignup}) {
               className={styles.name}
               onChange={(e)=> setLastname(e.target.value)}
               required
+              name="lastname"
             />
           </section>
           <input
@@ -97,6 +102,7 @@ export default function Signup({closeSignup}) {
             className={styles.id}
             onChange={(e)=> setId(e.target.value)}
             required
+            name="id"
           />
           <input
             type="text"
@@ -104,6 +110,7 @@ export default function Signup({closeSignup}) {
             className={styles.password}
             onChange={(e)=> setPassword(e.target.value)}
             required
+            name="password"
           />
           <section className={styles.birthday}>
             <p>
@@ -111,7 +118,7 @@ export default function Signup({closeSignup}) {
             </p>
             <section className={styles.date_content}>
               <select
-                name=""
+                name="month"
                 id="month"
                 onChange={(e) => setMonth(e.target.value)}
 
@@ -132,13 +139,13 @@ export default function Signup({closeSignup}) {
                 <option value="Dec">Dec</option>
               </select>
 
-              <select name="" id="" onChange={(e) => setDay(e.target.value)} className={styles.date} required>
+              <select name="day" id="" onChange={(e) => setDay(e.target.value)} className={styles.date} required>
                 {date.map((val) => {
                   return <option value={val}>{val}</option>;
                 })}
               </select>
 
-              <select name="" id="" onChange={(e) => setYrs(e.target.value)} className={styles.date} required>
+              <select name="yrs" id="" onChange={(e) => setYrs(e.target.value)} className={styles.date} required>
                 {year.map((val) => {
                   return <option value={val}>{val}</option>;
                 })}

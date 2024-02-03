@@ -6,6 +6,8 @@ export const userSchema =  mongoose.Schema({
     id:Number,
     password:String,
     day:Number,
+    month:String,
+    yrs:Number,
     gender:String
 
 })
