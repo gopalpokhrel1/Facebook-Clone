@@ -19,7 +19,7 @@ export  async function GET() {
     return NextResponse.json({result:false})
    }
 
-   return NextResponse.json({result: data});
+   return NextResponse.json(data);
 
 
 }

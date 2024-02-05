@@ -57,6 +57,8 @@ export default function Signup({closeSignup}) {
     if(data.status == true){
       alert("inserted");
     }
+
+    closeSignup();
   
   }
 
@@ -99,6 +101,8 @@ export default function Signup({closeSignup}) {
           <input
             type="text"
             placeholder="Mobile number or email"
+            max='10'
+            min='9'
             className={styles.id}
             onChange={(e)=> setId(e.target.value)}
             required
