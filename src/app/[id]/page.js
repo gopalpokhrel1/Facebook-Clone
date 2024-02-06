@@ -9,8 +9,11 @@ export default async function page({params}) {
    const data = await response.find(p => p.id == id);
 
 
+
+
   return (
     <div>
+      
     </div>
   )
 }

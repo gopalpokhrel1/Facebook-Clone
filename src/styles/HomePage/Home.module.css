@@ -1,0 +1,110 @@
+.main{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.nav{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    background-color: #242526;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+    align-items: center;
+}
+
+.blue_home{
+    font-size: 1.6rem;
+    color: #0866ff;
+}
+.blue_page{
+    font-size: 1.6rem;
+    color: #0866ff;
+}
+.blue_video{
+    font-size: 1.6rem;
+    color: #0866ff;
+}
+.blue_marketplace{
+    font-size: 1.6rem;
+    color:#0866ff;
+}
+.blue_groups{
+    font-size: 1.6rem;
+    color: #0866ff;
+}
+.nav_left{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.nav_input{
+    width: 15rem;
+    height: 2.5rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: #3a3b3c;
+    color: #b8bbbf;
+    caret-color: #a5875c;
+    padding-left: 1rem;
+    font-size: 1rem;
+}
+
+.nav_input:focus{
+    outline: none;
+   
+
+}
+.nav_middle{
+    display: flex;
+    gap:1rem;
+    margin-left: -8rem;
+
+}
+.nav_right{
+    display: flex;
+    gap: 0.5rem;
+
+}
+
+.icon{
+    color:#b8bbbf;
+    font-size: 1.6rem;
+}
+.icon2{
+    color:#b8bbbf;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.home,.page,.video,.marketplace,.groups{
+    width: 6rem;
+    height: 4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 4px solid transparent;
+    
+}
+.display{
+    border-bottom: 4px solid #0866ff;
+}
+.photo{
+    color: aliceblue;
+}
+
+.menu, .messenger, .bell{
+    padding: 0.5rem;
+    background-color:#5a595979 ;
+    border-radius: 2rem;
+}
+.menu:hover{
+    background-color: #4c4c4d;
+}
+.messenger:hover{
+    background-color: #4c4c4d;
+}
+.bell:hover{
+    background-color: #4c4c4d;
+}
