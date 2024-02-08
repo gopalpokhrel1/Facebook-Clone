@@ -27,7 +27,7 @@ export default function Home() {
     const [displayvideo, setDisplayvideo] = useState(false);
     const [displaymarketplace, setDisplaymarketplace] = useState(false);
     const [displaygroups, setDisplaygroups] = useState(false);
-    const [home, setHome] = useState();
+    const [home, setHome] = useState(true);
     const [page, setPage] = useState(false);
     const [video, setVideo] = useState(false);
     const [ marketplace, setMarketplace] = useState(false);

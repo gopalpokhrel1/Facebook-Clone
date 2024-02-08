@@ -1,0 +1,45 @@
+.main{
+    margin-top: 4rem;
+    width: 20vw;
+   min-height: 100vh;
+    background-color: #242526;
+    padding: 2rem 0rem 0rem 1rem;
+
+}
+.title{
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    
+}
+.title_img{
+    width:3rem;
+    height: 2.5rem;
+    border: 1px solid white;
+    background-color: #d3d5d9;
+    border-radius: 2rem;
+}
+.title{
+    font-size: 1.2rem;
+    color: #d3d5d9 ;
+    font-weight: 400;
+}
+.content{
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.link{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    color:#d3d5d9;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+

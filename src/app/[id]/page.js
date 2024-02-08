@@ -1,3 +1,8 @@
+import Home from "@/components/HomePage/Home";
+import Sidebar from "@/components/sidebar/Sidebar";
+import Story from "@/components/story/Story";
+import styles from '../page.module.css'
+import Rightsidebar from "@/components/sidebar/Rightsidebar";
 
 
 export default async function page({params}) {
@@ -13,7 +18,12 @@ export default async function page({params}) {
 
   return (
     <div>
-      
+     <Home/>
+      <section className={styles.flex}>
+      <Sidebar/>
+     <Story/>
+     <Rightsidebar/>
+      </section>
     </div>
   )
 }
