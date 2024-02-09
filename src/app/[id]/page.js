@@ -17,7 +17,7 @@ export default async function page({params}) {
 
 
   return (
-    <div>
+    <div style={{width:'100%', backgroundColor:'#18191a'}}>
      <Home/>
       <section className={styles.flex}>
       <Sidebar/>

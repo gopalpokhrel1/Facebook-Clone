@@ -8,6 +8,9 @@ import { FaXmark } from "react-icons/fa6";
 import { AiTwotoneLike } from "react-icons/ai";
 import { FaHeart } from "react-icons/fa";
 import { FaComment } from "react-icons/fa";
+import { AiOutlineLike } from "react-icons/ai";
+import { FaRegComment } from "react-icons/fa6";
+import { FaShare } from "react-icons/fa";
 
 
 
@@ -44,6 +47,10 @@ export default function Scroll() {
       </section>
 
       <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
     </section>
   );
 }
@@ -64,7 +71,7 @@ const Post = () => {
             <h1 className={styles.post_header_content}>Gopal</h1>
           </section>
           <section className={styles.post_bottom}>
-            <BsThreeDots size={30}  className={styles.post_icon}/>
+            <BsThreeDots size={30} className={styles.post_icon} />
             <FaXmark size={30} className={styles.post_icon1} />
           </section>
         </section>
@@ -72,16 +79,36 @@ const Post = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
           tempore.
         </p>
-        <section>
-          <Image src="" className={styles.post_image} />
-        </section>
-        <section className={styles.react}>
-         <section>
-         <AiTwotoneLike style={{color:'blue'} } size={20}/>
-          <FaHeart style={{color:'red'}} size={20}/>
-         </section>
 
-          <FaComment style={{color:'#a8abaf'}}/>
+        <Image src="" className={styles.post_image} />
+
+        <section className={styles.react}>
+          <section className={styles.react_info}>
+            <section>
+              <AiTwotoneLike style={{ color: "blue" }} size={20} />
+              <FaHeart style={{ color: "red" }} size={20} />
+            </section>
+
+            <FaComment style={{ color: "#a8abaf" }} />
+          </section>
+
+
+          <hr />
+
+          <section className={styles.react_icon}>
+            <section className={styles.icon_interact}>
+             <AiOutlineLike size={20} style={{color:'white'}}/>
+             <p>Like</p>
+            </section>
+            <section className={styles.icon_interact}>
+             <FaRegComment  size={20} style={{color:'white'}}/>
+             <p>Comment</p>
+            </section>
+            <section className={styles.icon_interact}>
+            <FaShare  size={20} style={{color:'white'}}/>
+            <p>Share</p>
+            </section>
+          </section>
         </section>
       </section>
     </>

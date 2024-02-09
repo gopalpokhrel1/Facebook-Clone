@@ -5,6 +5,8 @@ import Link from 'next/link'
 
 export default function Sidebar() {
   return (
+   <>
+   <section className={styles.container}>
     <section className={styles.main}>
 
             <section className={styles.content}>
@@ -47,6 +49,30 @@ export default function Sidebar() {
                     <Image src='/events.png' alt='hello'  width = {30} height = {30} />
                     <p className={styles.sidebar_list}>Events</p>
                  </Link>
+                 <Link href='#' className={styles.link}>
+                    <Image src='/events.png' alt='hello'  width = {30} height = {30} />
+                    <p className={styles.sidebar_list}>Events</p>
+                 </Link>
+                 <Link href='#' className={styles.link}>
+                    <Image src='/events.png' alt='hello'  width = {30} height = {30} />
+                    <p className={styles.sidebar_list}>Events</p>
+                 </Link>
+                 <Link href='#' className={styles.link}>
+                    <Image src='/events.png' alt='hello'  width = {30} height = {30} />
+                    <p className={styles.sidebar_list}>Events</p>
+                 </Link>
+                 <Link href='#' className={styles.link}>
+                    <Image src='/events.png' alt='hello'  width = {30} height = {30} />
+                    <p className={styles.sidebar_list}>Events</p>
+                 </Link>
+                 <Link href='#' className={styles.link}>
+                    <Image src='/events.png' alt='hello'  width = {30} height = {30} />
+                    <p className={styles.sidebar_list}>Events</p>
+                 </Link>
+                 <Link href='#' className={styles.link}>
+                    <Image src='/events.png' alt='hello'  width = {30} height = {30} />
+                    <p className={styles.sidebar_list}>Events</p>
+                 </Link>
                  {/* <section>
                     <Image src='hello' alt='hello'  width = {30} height = {30} />
                     <p className={styles.sidebar_list}>see more</p>
@@ -57,5 +83,7 @@ export default function Sidebar() {
             </section>
       
     </section>
+    </section>
+    </>
   )
 }

@@ -1,7 +1,70 @@
-.main{
+.container {
+    width: 23vw;
+}
+
+.main {
     margin-top: 4rem;
     width: 23vw;
-    min-height: 100vh;
+    height: 100%;
+    background-color: #18191a;
+    position: fixed;
+    overflow-y: scroll;
+    right: 0rem;
+    color: white;
 
-    background-color: red;
+    scrollbar-width: none;
+}
+
+.main:hover {
+    scrollbar-width: auto;
+}
+.main::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+.main::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px; 
+}
+.main::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+.main::-webkit-scrollbar {
+    width: 5px; 
+    height: 5px; 
+}
+
+.header {
+    width: 22vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0.5rem;
+}
+
+.flex {
+    display: flex;
+    gap: 1rem;
+}
+
+.icon {
+    padding: 0.2rem;
+    cursor: pointer;
+}
+
+.icon:hover {
+    background-color: #303031;
+    border-radius: 5rem;
+}
+
+.item {
+    width: 23vw;
+    margin: 1rem 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.img {
+    border: 2px solid red;
+    border-radius: 2rem;
 }

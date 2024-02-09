@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
    
 }
 .create{
@@ -67,6 +66,7 @@
 .post{
     width: 35vw;
     height: fit-content;
+    margin-top: 1rem;
     
     
 }
@@ -78,6 +78,8 @@
     background-color: #242526;
     padding: 0.5rem;
     color: #ffffff;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
 }
 .post_top{
     display: flex;
@@ -111,10 +113,43 @@
     background-color: #3a3b3c;
 }
 .react{
+    padding: 0.5rem;
     width: 35vw;
-    padding: 0.2rem 1rem;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    background-color: #242526;
+    margin-top: -0.3rem;
+    overflow: hidden;
+    border-bottom-left-radius: 0.2rem;
+    border-bottom-right-radius: 0.2rem;
+    
+}
+.react_info{
+    padding: 0.5rem 1rem;
+    width: 35vw;
     display: flex;
     justify-content: space-between;
-    background-color: #242526;
 
+}
+.react_icon{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon_interact{
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    color: #b8bbbf;
+    cursor: pointer;
+    
+}
+
+.icon_interact:hover{
+    background-color: #3a3b3c;
+    border-radius: 0.3rem;
 }
