@@ -1,7 +1,7 @@
 import Home from "@/components/HomePage/Home";
 import Sidebar from "@/components/sidebar/Sidebar";
 import Story from "@/components/story/Story";
-import styles from '../page.module.css'
+import styles from '../../page.module.css'
 import Rightsidebar from "@/components/sidebar/Rightsidebar";
 
 

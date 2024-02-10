@@ -64,7 +64,7 @@ const router = useRouter();
     const user = data.find(p => p.id === id);
     if(user){
         if( user.password === password){
-            router.push(`/${id}`);
+            router.push(`/home/${id}`);
         }
         else{
             alert('Not found');
