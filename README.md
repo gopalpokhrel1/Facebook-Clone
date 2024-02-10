@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Facebook Clone
+
+This project is a simplified version of Facebook built using Next.js and MongoDB. It includes features such as user signup, login, and a home page.
 
 ## Getting Started
 
-First, run the development server:
+To get started with this project, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the repository to your local machine:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+2. Install dependencies:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+3. Set up MongoDB:
+   - Ensure you have MongoDB installed and running locally or provide a connection string to a MongoDB instance in a `.env` file.
 
-To learn more about Next.js, take a look at the following resources:
+4. Set up environment variables:
+   - Create a `.env` file in the root directory of the project.
+   - Add the following environment variables:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+5. Start the development server:
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+6. Open your browser and visit [http://localhost:3000](http://localhost:3000) to view the application.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Usage
+
+### Signup
+
+- To sign up for a new account, navigate to the signup page by clicking the "Sign Up" link.
+- Enter your desired username, email, and password.
+- Click the "Sign Up" button to create your account.
+
+### Login
+
+- After signing up, you'll be redirected to the login page.
+- Enter your email and password.
+- If the provided credentials are correct, you'll be redirected to the home page. Otherwise, you'll see an error message indicating invalid credentials.
+
+### Home Page
+
+- Upon successful login, you'll be redirected to the home page.
+- Here you can view your feed, post updates, view friends' posts, etc.
+
+## Technologies Used
+
+- Next.js
+- MongoDB
+- Node.js
+- Other dependencies (listed in `package.json`)
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+
